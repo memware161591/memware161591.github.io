@@ -45,7 +45,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("/images/assets/background.jpg");
+  background-image: url("images/assets/background.jpg");
   background-size: 20%;
 }
 main {
@@ -206,7 +206,7 @@ footer > ul a {
   border: 2px solid white;
   padding: 4px;
 }
-.video-overlay > h1 {
+.video-overlay h1 {
   text-align: center;
 }
 
