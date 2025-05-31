@@ -208,6 +208,7 @@ footer > ul a {
 }
 .video-overlay h1 {
   text-align: center;
+  padding:0 4px;
 }
 
 .card {
@@ -300,4 +301,10 @@ footer > ul a {
   .card {
     width: 95%;
   }
+}
+@media only screen and (max-width: 480.1px) {
+  header,footer{
+    font-size:0.9rem;
+  }
+
 }
