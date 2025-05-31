@@ -1,0 +1,301 @@
+/* Set the background style for the page */
+/* Styles for the menu, and order form have their own style sheets */
+/* Define global custom colors & styleshere */
+:root {
+  /* Main Brand Color */
+  --nihon-main-color: #ff8c6f;
+  /* RoyalBlue */
+  --nihon-blue: #4169e1;
+  /* Alice blue */
+  --nihon-light-blue: #f0f8ff;
+  /* Green -- matcha green */
+  --nihon-green: #91b500;
+  /* Gainsboro */
+  --nihon-grey: #dcdcdc;
+  /* Dark Grey */
+  --nihon-dark-grey: #a9a9a9;
+  /* Dim Grey */
+  --nihon-dim-grey: #696969;
+  /* LightSalmon */
+  --nihon-light-red: #ffa07a;
+  /* OrangeRed */
+  --nihon-red: #ff4500;
+  /* Sienna */
+  --nihon-brown: #a0522d;
+  /* SeaShell */
+  --nihon-white1: #fff5ee;
+  /* PapayaWhip */
+  --nihon-white2: #ffefd5;
+  /* DarkSlateGrey */
+  --nihon-black: #2f4f4f;
+
+  --header-title-color: var(--nihon-blue);
+  --header-subtitle-color: var(--nihon-blue);
+  --menu-border-color: var(--nihon-grey);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/assets/background.jpg");
+  background-size: 20%;
+}
+main {
+  display: flex;
+  flex: 1;
+}
+header,
+footer {
+  background-color: var(--nihon-white1);
+  opacity: 0.82;
+  font-size: 1.2rem;
+  height: 125px;
+}
+header > .navbar {
+  justify-content: space-between;
+}
+header > .navbar ul li {
+  padding: 10px;
+  margin: 0 10px;
+}
+
+h1,
+p {
+  margin: 1rem 0;
+}
+video {
+  width: 100% !important;
+  height: auto !important;
+}
+footer {
+  flex-shrink: 0;
+}
+footer > ul {
+  padding: 1.25rem;
+  text-align: center;
+}
+footer > ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.25rem 0.75rem;
+}
+footer > ul a {
+  text-decoration: none;
+}
+
+/* classes */
+
+.content {
+  padding: 0.1rem;
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.hcenter {
+  justify-content: center;
+}
+
+.height-60 {
+  height: 60% !important;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.width-100 {
+  width: 100%;
+}
+.width-25 {
+  width: 25%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-75 {
+  width: 75%;
+}
+
+.background-black {
+  background-color: black;
+}
+
+.background-blue {
+  background-color: var(--nihon-blue);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.navbar ul {
+  text-align: center;
+}
+.navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.navbar a:link,
+.navbar a:visited {
+  text-decoration: none;
+  color: var(--nihon-black);
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: var(--nihon-main-color);
+  text-decoration: underline;
+  text-decoration-color: var(--nihon-main-color);
+  text-decoration-thickness: 0.2rem;
+}
+
+.video-box {
+  display: flex;
+
+  position: relative;
+  width: 100%;
+  height: 690px;
+}
+.video-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  top: 45%;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  color: white;
+  background-color: rgba(8, 8, 8, 0.53);
+}
+
+.video-overlay > a:link,
+.video-overlay > a:visited {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 3px;
+}
+.video-overlay > a:hover {
+  background: var(--nihon-blue);
+  font-weight: bold;
+  border: 2px solid white;
+  padding: 4px;
+}
+
+.card {
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 4px;
+  border: 2px solid var(--nihon-white2);
+  border-radius: 10px;
+
+  color: white;
+}
+
+.card3 {
+  width: calc((100% - 90px) / 3);
+}
+.card2 {
+  width: calc((100% - 90px) / 2);
+}
+
+.card img {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+/* ids */
+#footer-img {
+  position: relative;
+  top: 10px;
+}
+#brand-logo {
+  width: 8rem;
+  height: auto;
+}
+
+#nihon-background {
+  background-image: url("/images/background.jpg");
+  background-size: 20%;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 767.98px) {
+  header,
+  footer {
+    height: 100%;
+  }
+
+  header > .navbar {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  header > .navbar ul {
+    margin-bottom: 10px;
+  }
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-content,
+  .left-content {
+    width: 100% !important;
+  }
+  .orderForm {
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .form-container {
+    width: 95% !important;
+  }
+
+  article > .map {
+    width: 95% !important;
+    margin: 10px 0 !important;
+  }
+
+  .menu-category {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .menu-category > p {
+    padding: 0 10px 0 10px;
+  }
+  .card {
+    width: 95%;
+  }
+}
+

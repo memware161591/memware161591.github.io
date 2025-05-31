@@ -1,0 +1,57 @@
+.orderForm {
+  display: flex;
+  background-color:var(--nihon-blue);
+  flex-direction:row;
+  flex-wrap:wrap;
+  border-radius: 2px;
+  width:100%;
+  justify-content:center;
+
+}
+
+.form-container
+ {
+  display:flex;
+  color:white;
+  flex-direction:column;
+  margin:1rem;
+  padding:1rem;
+  width:45%;
+}
+
+.order-item{
+  display:flex;
+  flex-direction:column;
+  margin:20px;
+}
+.form-container h2{
+  margin-bottom:10px;
+}
+
+.form-container input{
+  padding:10px;
+  margin-bottom:15px;
+}
+
+.form-container fieldset{
+  border-radius: 5px;
+  padding-left:15px;
+  margin-top:15px;
+}
+
+article button{
+  margin-top:2rem;
+  width:100%;
+  height:5rem;
+  text-transform:uppercase;
+  font-size:3rem;
+  border-radius:10px;
+  border: 2px solid white;
+  background-color:var(--nihon-grey);
+  color:var(--nihon-blue);
+}
+
+article button:hover{
+  background-color:var(--nihon-blue);
+  color:var(--nihon-grey);
+}
