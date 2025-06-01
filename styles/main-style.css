@@ -45,7 +45,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url("images/assets/background.jpg");
+  background-image: url("/images/assets/background.jpg");
   background-size: 20%;
 }
 main {
@@ -208,7 +208,7 @@ footer > ul a {
 }
 .video-overlay h1 {
   text-align: center;
-  padding:0 4px;
+  padding: 0 4px;
 }
 
 .card {
@@ -247,10 +247,7 @@ footer > ul a {
   height: auto;
 }
 
-#nihon-background {
-  background-image: url("/images/background.jpg");
-  background-size: 20%;
-}
+
 
 /* media queries */
 
@@ -303,8 +300,8 @@ footer > ul a {
   }
 }
 @media only screen and (max-width: 480.1px) {
-  header,footer{
-    font-size:0.9rem;
+  header,
+  footer {
+    font-size: 0.9rem;
   }
-
 }
